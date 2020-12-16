@@ -1,5 +1,5 @@
 {% set name = "extensisq" %}
-{% set version = "0.0.2" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/extensisq-{{ version }}.tar.gz
-  sha256: e226ff6b4e537468fc7bc5989f937533fa6cac6bdd9c0b40bd6572ca3788ff4c
+  sha256: e68b3d93775c456c200b9561c1ca3e8e300a1f70859619f6bd0e221ba44bff14
 
 build:
   number: 0
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/WRKampi/extensisq
-  summary: extend solve_ivp of scipy.integrate with OdeSolver objects
+  summary: Extend scipy.integrate with various methods for solve_ivp
   license: MIT
   license_file: LICENSE
 
