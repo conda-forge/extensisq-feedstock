@@ -1,22 +1,19 @@
 {% set name = "extensisq" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
-
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/extensisq-{{ version }}.tar.gz
-  sha256: 6db12212e2d51e101253e8b9e86d7490bad73922f005056a0e7dddd686445c34
-
+  sha256: 3595aee42472ac2fb1141b7a54b9ac5e5756ac401c23ee3c9e07887a8644741d
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-
 
 requirements:
   host:
@@ -27,7 +24,6 @@ requirements:
     - python >=3.6
     - scipy >=1.0.0
 
-
 test:
   imports:
     - extensisq
@@ -36,13 +32,11 @@ test:
   requires:
     - pip
 
-
 about:
   home: https://github.com/WRKampi/extensisq
   summary: Extend scipy.integrate with various methods for solve_ivp
   license: MIT
   license_file: LICENSE
-
 
 extra:
   recipe-maintainers:
