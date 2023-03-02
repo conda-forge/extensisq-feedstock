@@ -1,5 +1,5 @@
 {% set name = "extensisq" %}
-{% set version = "0.4.0" %}
+{% set version = "0.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/extensisq-{{ version }}.tar.gz
-  sha256: 768ee5208054a9046e6a1fbdb5eaee050b5f3888fb947ed8a351bc8d1a9e6cb0
+  sha256: 54791a0f60ec007a1bd1c50588b8cb3f47495619ffa0deeba38c990cdd212cd7
 
 build:
   number: 0
