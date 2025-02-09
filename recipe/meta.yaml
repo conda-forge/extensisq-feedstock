@@ -1,5 +1,6 @@
 {% set name = "extensisq" %}
 {% set version = "0.6.0" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -21,8 +22,8 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.22.0
-    - scipy >=1.8.0
+    - numpy >=1.26.0
+    - scipy >=1.15.0
 
 test:
   imports:
