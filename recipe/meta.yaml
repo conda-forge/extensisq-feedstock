@@ -1,5 +1,6 @@
 {% set name = "extensisq" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/extensisq-{{ version }}.tar.gz
-  sha256: e93075a4637aaa12c09abfabeaf5b40870cc7f859cde7c7697610093ee064f7b
+  sha256: 16117422e03980b0e40dd7570efbeb6f47a49817f898f81148b70b95ecea5ae2
 
 build:
   noarch: python
@@ -18,10 +19,11 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.22.0
-    - scipy >=1.8.0
+    - numpy >=2.2.0
+    - scipy >=1.15.0
 
 test:
   imports:
