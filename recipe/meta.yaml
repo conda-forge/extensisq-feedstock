@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.26.0
+    - numpy >=2.2.0
     - scipy >=1.15.0
 
 test:
